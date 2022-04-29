@@ -47,6 +47,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    &:hover .close-icon,
+    &:focus .close-icon {
+        fill: var(--brand-color-blue);
+    }
 }
 
 .close-icon {
@@ -56,10 +61,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .close-icon,
-.modal-close-btn:focus .close-icon {
-    fill: var(--brand-color-blue);
-}
 
 .image-wrapper {
     position: relative;
@@ -86,11 +87,13 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: linear;
+
+    .product-wrapper:hover & {
+        transform: translateY(0);
+    }
 }
 
-.product-wrapper:hover .product-descr {
-    transform: translateY(0);
-}
+
 
 .modal-message {
     font-weight: 700;
@@ -126,12 +129,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
+
+    &:hover,
+    &:focus {
+        border-color: var(--brand-color-blue);
+    }
 }
 
-.form-input:hover,
-.form-input:focus {
-    border-color: var(--brand-color-blue);
-}
 
 .input-icon {
     position: absolute;
@@ -140,12 +144,13 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-label:hover &,
+    .modal-label:focus & {
+        fill: var(--brand-color-blue);
+    }
 }
 
-.modal-label:hover .input-icon,
-.modal-label:focus .input-icon {
-    fill: var(--brand-color-blue);
-}
 
 .form-coments {
     resize: none;
@@ -158,20 +163,23 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
+
+    &:hover,
+    &:focus {
+        border-color: var(--brand-color-blue);
+    }
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
-.form-coments:hover,
-.form-coments-focus {
-    border-color: var(--brand-color-blue);
-}
 
-.form-coments::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
+
 
 .agreement {
     margin-bottom: 30px;
@@ -245,9 +253,9 @@
     margin-left: auto;
     margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.submit-button:hover,
-.submit-button:focus {
-    background-color: #188ce8;
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }

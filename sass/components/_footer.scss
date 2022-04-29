@@ -17,12 +17,14 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--brand-color-blue);
+    }
 }
 
-.footer-nav:hover,
-.footer-nav:focus {
-    color: var(--brand-color-blue);
-}
+
 
 .footer-adress {
     font-weight: 400;
@@ -34,16 +36,18 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color: var(--brand-color-blue);
+    }
 }
 
 .adress-bar-footer {
     margin-top: 20px;
 }
 
-.footer-adress:hover,
-.footer-adress:focus {
-    color: var(--brand-color-blue);
-}
+
 
 .footer-flex {
     display: flex;
@@ -62,16 +66,17 @@
 
 .social-item-footer {
     margin-right: 10px;
+
+    &:hover .circle-footer,
+    &:focus .circle-footer {
+        background-color: var(--brand-color-blue);
+    }
+    
+    &:last-child {
+        margin-right: 0px;
+    }
 }
 
-.social-item-footer:hover .circle-footer,
-.social-item-footer:focus .circle-footer {
-    background-color: var(--brand-color-blue);
-}
-
-.social-item-footer:last-child {
-    margin-right: 0px;
-}
 
 .circle-footer {
     width: 44px;

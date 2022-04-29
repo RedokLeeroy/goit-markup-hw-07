@@ -48,9 +48,9 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--brand-color-white);
-}
 
-.main__button:hover,
-.main__button:focus {
-    background-color: #188ce8;
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }

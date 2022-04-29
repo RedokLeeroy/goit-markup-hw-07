@@ -24,28 +24,30 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--brand-color-blue);
+    }
 }
 
-.navigation-item:hover,
-.navigation-item:focus {
-    color: var(--brand-color-blue);
-}
 
 .current {
     position: relative;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--brand-color-blue);
+    }
 }
 
-.current::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--brand-color-blue);
-}
 
 .icon-header {
     margin-right: 0px;
