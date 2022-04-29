@@ -19,8 +19,7 @@
         "../sass/layout/_page-hero.scss",
         "../sass/layout/_page-header.scss",
         "../sass/layout/_page-product.scss",
-        "../sass/layout/_page-team.scss",
-        "../sass/base/_color-selector.scss"
+        "../sass/layout/_page-team.scss"
     ],
     "names": [],
     "file": "main.min.css"
