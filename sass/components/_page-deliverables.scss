@@ -19,11 +19,12 @@
 
 .what-we-do-item {
     margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
 }
 
-.what-we-do-item:last-child {
-    margin-right: 0px;
-}
 
 .image-desc {
     position: relative;
