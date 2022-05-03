@@ -1,7 +1,9 @@
-@import 'base/base';
 @import 'utils/variables';
+@import 'utils/mixins';
+@import 'base/base';
 @import 'components/filter';
 @import 'components/logo';
+@import 'components/mobile-menu';
 @import 'components/modal/module';
 @import 'layout/page-advantages';
 @import 'layout/page-clients';

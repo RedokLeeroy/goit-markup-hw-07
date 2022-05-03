@@ -23,7 +23,7 @@
           <a href="index.html" class="logo flex"
             ><span class="blue">Web</span><span>Studio</span></a
           >
-          <ul class="padding-hide flex">
+          <ul class="padding-hide flex nav-list">
             <li class="navigation-mar">
               <a href="index.html" class="navigation-item current blue"
                 >Студия</a
@@ -57,6 +57,62 @@
             >
           </li>
         </ul>
+        <!--mobile sec menu-->
+        <button
+          class="menu-button"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg class="menu-icon" width="40" height="40">
+            <use
+              class="menu-icon-open"
+              href="images/icons/symbol-defs.svg#icon-burger"
+            ></use>
+            <use
+              class="menu-icon-close"
+              href="images/icons/symbol-defs.svg#icon-close-button"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-overlay" data-menu>
+          <div class="menu">
+            <nav class="menu__nav">
+              <ul class="menu__nav-list">
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link blue" href="">Студия</a>
+                </li>
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link" href="">Портфолио</a>
+                </li>
+                <li class="menu__nav-item">
+                  <a class="menu__nav-link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="menu__phone blue" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <a class="menu__mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <ul class="menu__socials">
+              <li class="public-socials__item">
+                <a class="public-socials__link" href="" lang="en">Instagram</a>
+              </li>
+              <li class="public-socials__item">
+                <a class="public-socials__link" href="" lang="en">Youtube</a>
+              </li>
+              <li class="public-socials__item">
+                <a class="public-socials__link" href="" lang="en">Facebook</a>
+              </li>
+              <li class="public-socials__item">
+                <a class="public-socials__link" href="" lang="en">linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--mobile sec end-->
       </div>
     </header>
     <main>
@@ -448,7 +504,7 @@
     <footer class="backgroundblk section footer-padding">
       <div class="container footer-flex">
         <div class="footer-container">
-          <a href="index.html" class="logo"
+          <a href="index.html" class="logo-footer"
             ><span class="blue">Web</span><span class="white">Studio</span></a
           >
           <address class="font-style-none adress-bar-footer">
@@ -510,22 +566,20 @@
         </div>
         <div class="footer-form-container">
           <p class="social-paragraph">подпишитесь на рассылку</p>
-          <div class="flex">
-            <form>
-              <input
-                class="footer-form"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </form>
-            <button class="footer-form-button">
+          <form class="footer-form">
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-form-button">
               Подписаться
               <svg width="24" height="24" class="footer-button-icon">
                 <use href="images/icons/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -601,5 +655,6 @@
       </form>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -13,22 +13,46 @@
 }
 
 .flex-our-com {
+    @include mq(tablet-only) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include mq(desktop) {
     display: flex;
     align-items: center;
+    }
 }
 
 .team-item {
-    width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-right: 30px;
     background-color: #ffffff;
 
+    @include mq(mobile-only) {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    
+    }
+    
+    @include mq(tablet-only) {
+        width: 354px;
+        margin-right: 0px;
+    
+    }
+
     &:last-child {
         margin-right: 0px;
+        @include mq(mobile-only) {
+            margin-bottom: 0px;
+        }
     }
+    
 }
+
 
 
 .image-display {
@@ -53,7 +77,16 @@
 .flex-icon {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+}
+
+.social-item {
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0px;
 }
 
 .social-item:hover .circle .icon-item,

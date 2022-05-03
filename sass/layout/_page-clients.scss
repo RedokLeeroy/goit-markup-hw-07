@@ -1,10 +1,23 @@
 .flex-clients {
     display: flex;
     align-items: center;
+
+    @include mq(mobile-only) {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include mq(tablet-only) {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
 }
 
 .clients-li {
+    @include mq(desktop) {
     margin-right: 30px;
+    }
 }
 
 .clients-li:last-child {
@@ -24,6 +37,18 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mq(mobile-only) {
+        width: 210px;
+    }
+
+    @include mq(tablet) {
+        width: 226px;
+    }
+
+    @include mq(desktop) {
+        width: 170px;
+    }
 
     &:hover,
     &:focus {
