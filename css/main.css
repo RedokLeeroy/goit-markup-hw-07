@@ -743,6 +743,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .deliverables {
+    display: block;
+  }
+}
+
 .header2wwd {
   font-weight: 700;
   font-size: 36px;
